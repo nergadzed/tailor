@@ -1,0 +1,28 @@
+:any-link {
+    text-decoration: none;
+
+    code {
+        background-color: unset;
+        color: var(--green2);
+    }
+}
+
+pre,
+tt,
+code,
+.pre,
+span.type,
+a.type {
+    font-family: "Iosevka", monospace;
+    font-variant-ligatures: none;
+}
+
+#toc ul li {
+    list-style-type: circle;
+    margin-bottom: 0;
+}
+
+header.header,
+div.api_stability {
+    position: static;
+}

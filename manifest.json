@@ -1,0 +1,35 @@
+{
+    "content_scripts": [
+        {
+            "css": [
+                "MDN.css"
+            ],
+            "js": [
+                "MDN.js"
+            ],
+            "matches": [
+                "*://developer.mozilla.org/en-US/docs/Web/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "css": [
+                "NodeJS.css"
+            ],
+            "js": [
+                "NodeJS.js"
+            ],
+            "matches": [
+                "*://nodejs.org/docs/latest/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "description": "Make documentations more readable",
+    "icons": {
+        "48": "tailor.png"
+    },
+    "manifest_version": 2,
+    "name": "Tailor",
+    "version": "0.0.1"
+}

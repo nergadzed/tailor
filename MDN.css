@@ -1,0 +1,27 @@
+body {
+    --background-secondary: #000000;
+    --background-primary: #000000;
+    --border-primary: #606060;
+    --border-secondary: #404040;
+    --font-body: unset;
+    --mdn-background-dark: #000000;
+    --text-primary: #B0B0B0;
+    --text-secondary: #A7A7A7;
+
+    .main-page-content a:link,
+    .main-page-content a:visited {
+        text-decoration: none;
+    }
+
+    header.top-navigation,
+    div.top-banner,
+    div.bottom-banner-container,
+    footer.page-footer {
+        display: none;
+    }
+
+    div.sticky-header-container {
+        position: sticky;
+        top: 0px;
+    }
+}
