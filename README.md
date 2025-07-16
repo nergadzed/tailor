@@ -1,4 +1,4 @@
-#Firefox Extension
+# Firefox Extension
 
 Custom extension to make [NodeJS](https://nodejs.org/docs/latest/) and [MDN](https://developer.mozilla.org/en-US/docs/Web) a little more readable.
 
