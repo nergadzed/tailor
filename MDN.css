@@ -1,10 +1,11 @@
 body {
-    --background-secondary: #000000;
     --background-primary: #000000;
+    --background-secondary: #000000;
     --border-primary: #606060;
     --border-secondary: #404040;
     --font-body: unset;
     --mdn-background-dark: #000000;
+    --sticky-header-with-actions-height: var(--article-actions-container-height);
     --text-primary: #B0B0B0;
     --text-secondary: #A7A7A7;
 
