@@ -1,9 +1,27 @@
+:root {
+    scroll-padding-top: 1rem;
+    body {
+        font-family: unset;
+        div {
+            border-bottom: 1px solid #2F2F2F;
+        }
+    }
+}
+
 :any-link {
     text-decoration: none;
 
     code {
         background-color: unset;
         color: var(--green2);
+    }
+}
+
+@media screen and (width >=1200px) {
+    div#column1.interior {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80em;
     }
 }
 
@@ -17,9 +35,29 @@ a.type {
     font-variant-ligatures: none;
 }
 
-#toc ul li {
-    list-style-type: circle;
-    margin-bottom: 0;
+#toc {
+    a:link {
+        color: #6F9F3F;
+    }
+
+    li>ul {
+        margin-top: 0;
+    }
+
+    ul {
+        li {
+            list-style-type: circle;
+            margin-bottom: 0;
+
+            code {
+                font-weight: 700;
+            }
+
+            &>span[class^='stability_'] {
+                opacity: 0.5;
+            }
+        }
+    }
 }
 
 header.header,

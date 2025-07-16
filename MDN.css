@@ -8,6 +8,7 @@ body {
     --sticky-header-with-actions-height: var(--article-actions-container-height);
     --text-primary: #B0B0B0;
     --text-secondary: #A7A7A7;
+    --max-width: 75dvw;
 
     .main-page-content a:link,
     .main-page-content a:visited {
