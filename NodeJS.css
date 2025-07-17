@@ -1,7 +1,9 @@
 :root {
     scroll-padding-top: 1rem;
+
     body {
         font-family: unset;
+
         div {
             border-bottom: 1px solid #2F2F2F;
         }
@@ -17,7 +19,7 @@
     }
 }
 
-@media screen and (width >=1200px) {
+@media screen and (width >=1600px) {
     div#column1.interior {
         margin-left: auto;
         margin-right: auto;
