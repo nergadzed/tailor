@@ -1,0 +1,22 @@
+:root {
+    --verso-code-font-family: "Iosevka", monospace;
+    --verso-header-height: 0;
+    --verso-structure-font-family: unset;
+    --verso-text-font-family: unset;
+    --verso-toc-background-color: unset;
+
+    filter: invert(1);
+    font-variant-ligatures: none;
+
+    label.toggle-split-toc {
+        transform: scale(0.75);
+    }
+
+    header {
+        display: none;
+    }
+
+    #toc .split-tocs {
+        margin-top: 0;
+    }
+}

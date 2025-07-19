@@ -14,6 +14,16 @@
         },
         {
             "css": [
+                "Lean.css"
+            ],
+            "matches": [
+                "*://lean-lang.org/functional_programming_in_lean/*",
+                "*://lean-lang.org/doc/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "css": [
                 "NodeJS.css"
             ],
             "js": [
