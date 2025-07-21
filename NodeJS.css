@@ -1,11 +1,21 @@
 :root {
     scroll-padding-top: 1rem;
+    text-rendering: optimizeLegibility;
 
     body {
         font-family: unset;
 
         div {
             border-bottom: 1px solid #2F2F2F;
+        }
+        pre,
+        tt,
+        code,
+        .pre,
+        span.type,
+        a.type {
+            font-family: "Iosevka", monospace;
+            font-variant-ligatures: none;
         }
     }
 }
@@ -27,15 +37,7 @@
     }
 }
 
-pre,
-tt,
-code,
-.pre,
-span.type,
-a.type {
-    font-family: "Iosevka", monospace;
-    font-variant-ligatures: none;
-}
+
 
 #toc {
     a:link {

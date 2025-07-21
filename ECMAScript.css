@@ -1,0 +1,174 @@
+@supports (color-scheme:dark) {
+    @media only screen and (width > 800px) and (prefers-color-scheme:dark) {
+        :root {
+            --dark-background: #171717;
+            --background-color: var(--dark-background);
+            --control-background-color: var(--dark-background);
+            --control-link-foreground-color: #5e9cc9;
+
+            --menu-width: 680px;
+            --border-color: #2F2F2F;
+
+            scrollbar-width: none;
+            text-rendering: geometricPrecision;
+
+            ::marker {
+                color: #A0A0A07F;
+            }
+
+            .menu-spacer {
+                max-width: var(--menu-width);
+            }
+
+            .secnum {
+                opacity: 0.5;
+                display: inline-block;
+                min-width: 3em;
+            }
+
+            emu-alg {
+                li>ol {
+                    border-left: 1px solid var(--border-color);
+                }
+
+                ol {
+                    list-style-position: outside;
+                }
+            }
+
+            input#menu-search-box {
+                background-color: var(--dark-background);
+                border: none;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            body {
+                color: #A0A0A0;
+                font-family: unset;
+                font-variant-ligatures: none;
+                cursor: none;
+                line-height: 1.6;
+
+                * {
+                    cursor: default;
+                }
+            }
+
+            dfn,
+            em,
+            var.field {
+                color: #D7D7D7;
+            }
+
+            div#menu {
+                background-color: var(--background-color);
+                border: none;
+                font-family: "Noto Sans ExtraCondensed", sans;
+                font-size: 90%;
+                max-width: var(--menu-width);
+                scrollbar-width: none;
+                line-height: 1.405;
+                transition-property: "opacity";
+                transition-duration: 250ms;
+
+                /*   opacity: 0; */
+                &>* {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                #menu-toc {
+                    li>ol {
+                        border-left: 1px solid var(--border-color);
+                    }
+
+                    li>a {
+                        padding: 0px 7px;
+                    }
+
+                    .toc {
+                        scrollbar-width: none;
+                    }
+
+                    .item-toggle {
+                        scale: 50%;
+                    }
+                }
+
+                &>div.menu-pane-header {
+                    display: none;
+                }
+            }
+
+            div#spec-container {
+                font-size: larger;
+                max-width: 80rem;
+                /* margin: unset; */
+            }
+
+            emu-alg,
+            emu-constraints,
+            emu-mods,
+            emu-opt,
+            emu-params {
+                font-family: "Noto Sans ExtraCondensed", sans;
+                font-size: smaller;
+            }
+
+            emu-rhs emu-nt {
+                background-color: #202020;
+                padding: 0px 8px;
+                border-radius: 4px;
+                margin-top: 1px;
+                margin-right: 0px;
+                margin-bottom: 1px;
+                margin-left: 0px;
+            }
+
+            emu-production {
+
+                emu-constraints,
+                emu-params {
+                    display: none;
+                }
+
+                &:hover {
+
+                    emu-constraints,
+                    emu-params {
+                        display: inline;
+                    }
+                }
+            }
+
+
+            emu-production:not([collapsed]) emu-rhs,
+            emu-production:not([collapsed]) emu-rhs:hover {
+                border: unset;
+                background-color: unset;
+            }
+
+            emu-t,
+            emu-val,
+            var.field {
+                font-family: monospace;
+                text-wrap-mode: nowrap;
+            }
+
+            img#ecma-logo {
+                display: none;
+            }
+
+            var {
+                margin: unset;
+
+                &[class*=referenced] {
+                    color: black;
+                }
+            }
+        }
+    }
+}

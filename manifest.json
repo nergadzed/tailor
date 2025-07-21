@@ -14,6 +14,18 @@
         },
         {
             "css": [
+                "ECMAScript.css"
+            ],
+            "js": [
+                "ECMAScript.js"
+            ],
+            "matches": [
+                "*://tc39.es/ecma262/*"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "css": [
                 "Lean.css"
             ],
             "matches": [
@@ -39,7 +51,13 @@
     "icons": {
         "48": "tailor.png"
     },
-    "manifest_version": 2,
+    "manifest_version": 3,
+    "permissions": [
+        "userScripts"
+    ],
+    "host_permissions": [
+        "*://tc39.es/ecma262/*"
+    ],
     "name": "Tailor",
     "version": "0.0.1"
 }
