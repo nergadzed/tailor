@@ -23,7 +23,7 @@
             .secnum {
                 opacity: 0.5;
                 display: inline-block;
-                min-width: 3em;
+                min-width: 4em;
             }
 
             emu-alg {
@@ -67,7 +67,7 @@
                 font-size: 90%;
                 max-width: var(--menu-width);
                 scrollbar-width: none;
-                line-height: 1.405;
+                line-height: 1.323;
                 transition-property: "opacity";
                 transition-duration: 250ms;
 
@@ -104,9 +104,7 @@
             }
 
             div#spec-container {
-                font-size: larger;
                 max-width: 80rem;
-                /* margin: unset; */
             }
 
             emu-alg,
