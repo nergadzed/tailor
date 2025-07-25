@@ -1,3 +1,15 @@
+@media (width >=1600px) {
+    body {
+        --max-width: 75dvw
+    }
+}
+
+@media (width < 1600px) {
+    body {
+        --max-width: 100dvw
+    }
+}
+
 body {
     --background-primary: #000000;
     --background-secondary: #000000;
@@ -8,7 +20,6 @@ body {
     --sticky-header-with-actions-height: var(--article-actions-container-height);
     --text-primary: #B0B0B0;
     --text-secondary: #A7A7A7;
-    --max-width: 75dvw;
 
     .main-page-content a:link,
     .main-page-content a:visited {
